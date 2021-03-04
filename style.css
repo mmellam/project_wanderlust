@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --primary: linear-gradient(90deg, rgba(0,162,204,1) 39%, rgba(0,135,186,1) 100%);
+    --secondary: #00d4ff;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, .navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-size: 18px;
+}
+
+.search {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--primary);
+    height: 540px;
+    color: #fff;
+
+}
+
+.wave {
+    background: var(--primary);
+}
+
+.weather-text {
+    margin-bottom: 0.3em;
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 800px) {
+    .location, .weather {
+        margin: 0.5rem auto;
+        width: 60%;
+    }
+}

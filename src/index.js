@@ -39,7 +39,7 @@ const getLocationPhoto = async () => {
         const response = await fetch(urlToFetch);
         if (response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse);
+            //console.log(jsonResponse);
             return jsonResponse.results[0].urls.regular;            
         }
         throw newError('Request failed');
@@ -56,7 +56,7 @@ const getWeather = async () => {
         const response = await fetch(urlToFetch);
         if (response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse);
+            //console.log(jsonResponse);
             return jsonResponse;
             
         }
@@ -74,7 +74,7 @@ const getSights = async () => {
         const response = await fetch(urlToFetch);
         if (response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse);
+            //console.log(jsonResponse);
             const sights = jsonResponse.response.groups[0].items.map(el => el.venue);
             return sights;
         }
@@ -92,7 +92,7 @@ const getRestaurants = async () => {
         const response = await fetch(urlToFetch);
         if (response.ok) {
             const jsonResponse = await response.json();
-            console.log(jsonResponse);
+            //console.log(jsonResponse);
             const sights = jsonResponse.response.groups[0].items.map(el => el.venue);
             return sights;
         }
@@ -108,8 +108,8 @@ const getSightPhotos = async (sightId) => {
         if (response.ok) {
             const jsonResponse = await response.json();
             let photoUrl = `${jsonResponse.response.photos.items[0].prefix}500x300${jsonResponse.response.photos.items[0].suffix}`;
-            console.log(photoUrl);
-            console.log(jsonResponse.response.photos.items);
+            //console.log(photoUrl);
+            //console.log(jsonResponse.response.photos.items);
             return photoUrl;
         }
         throw newError('Request failed');

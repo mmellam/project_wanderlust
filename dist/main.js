@@ -1,25 +1,19 @@
-// Foursquare API Info
-//const clientId = 'PU3IY1PZEOOANTPSHKNMS5HFSMEGEQ1IAVJYGYM4YVZP3NGD';
-//const clientSecret = '0V21IXU0EETE3SZJGGCP4T4R13NUTBJ0LMI5WQY45IMDPEKY';
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+// API endpoints
 const sightsUrl = 'https://api.foursquare.com/v2/venues/explore?near=';
-
-//const clientId = 'XJ4BJV4MPQYKDGPN5XXHOR1WICFWGKEOF0HNAJ4SUDAYA1OR';
-//const clientSecret = 'RLIJLGUNOXGA0HJCO0XDJUYCTIE5HDNM4QL3MUJ4RNTY3JNZ';
-
-const clientId = '5HKXAQMDQPKMQV2LI150HUFLL4CY1JKZIX0SUOYKQ5CZP2EZ';
-const clientSecret = 'AJ10MUNT0F1NRFLNLAH1OIMGVBGTLCLWLII1EYAPOW3W44CC';
-
-//const clientId = 'TR4X3Q0IIHVTU1AWU10NIGL4N1TS3PMB20MQITJDAD2DOIMP';
-//const clientSecret = 'G1S5RBAXTJRRJKIY51FOMLKMCZREDPY43DSMIIWBXLYG0J5V';
-
-// OpenWeather Info
-const openWeatherKey = '45dc1d2e92f646d108fe518401d1e210';
 const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
-
-// Unsplash API Info
-const accessKey = 'aCj35QTctvEhPMzvZHt5Ke3x6hkKLpSM6tpN4XoZ3N8';
-const secretKey = '38w3u_udxeId9THyug14GK4JMKoB02w2hgbms2YVap8';
 const unsplashUrl = `https://api.unsplash.com/search/photos/`;
+
+// API keys
+// Foursquare
+const clientId = process.env.FOURSQUARE_CLIENT_ID;
+const clientSecret = process.env.FOURSQUARE_CLIENT_SECRET;
+// Openweather
+const openWeatherKey = process.env.OPENWEATHER_KEY;
+// Unsplash
+const accessKey = process.env.UNSPLASH_ACCESS_KEY;
+const secretKey = process.env.UNSPLASH_SECRET_KEY;
 
 //Get DOM elements
 let userInput = document.getElementById('user-input');
@@ -204,3 +198,5 @@ userInput.addEventListener('keydown', event => {
         locDisplay.scrollIntoView({behavior: "smooth", block: "center"});
     }
 });
+/******/ })()
+;

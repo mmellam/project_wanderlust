@@ -24,7 +24,6 @@ p {
     background: var(--primary);
     height: 540px;
     color: #fff;
-
 }
 
 .wave {
@@ -38,6 +37,13 @@ p {
 
 footer p {
     font-size: 12px;
+    color: #fff;
+}
+
+footer {
+    margin-top: 7rem;
+    height: 150px;
+    background-color: rgba(0,162,204,1);
 }
 
 @media screen and (min-width: 800px) {

@@ -2,8 +2,8 @@
 A fully responsive desktop app to explore city destinations around the world by fetching images, current weather data, sights and restaurants from different APIs (OpenWeather API, Foursquare API, Unsplash API).
 
 ## Technologies used
-HTML, CSS Bootstrap, JavaScript, Webpack, dotenv
-Deployed with Netlify
+- HTML, CSS Bootstrap, JavaScript, Webpack, dotenv
+- Deployed with Netlify
 
 ## Description
 Wanderlust relies on working with async JS, third-party APIs, JSON, and rendering the results with HTML DOM.
